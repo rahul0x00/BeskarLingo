@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+   }
+body{
+font-family: 'Poppins', sans-serif;
+}
+.bg-img{
+  filter: brightness(50%);
+}
+.img-container{
+  /* background-image: url(./mandalorian.png); */
+  background-image: linear-gradient(to right bottom,rgba(235,151,78,0.3),rgba(230,125,34,0.3)),url("./mandalorian.png");
+  background-size: cover;
+  height: 100vh;
+  width: 1335px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  filter: blur(1px);
+}
+.field-container{
+  position: absolute;
+  /* text-align: center; */
+  top: 20%;
+  left: 35%;
+  translate: translate(-50%,-50%);
+}
+.output{
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.heading--primary{
+  color: #fdf2e9;
+  margin-left: 125px;
+  /* font-size: 0px; */
+  font-style: italic;
+  margin-bottom: 20px;
+}
+::-webkit-input-placeholder{
+  color: #fdf2e9;
+  position: absolute;
+  top: 10px;
+  left: 10px;  /* transform: translate(-50%); */
+}
+.text--input{
+  color: #fdf2e9;
+  padding-top: 10px;
+  padding: 10px;
+  opacity: 0.8;
+  background: #78552D;
+  font-style: italic;
+  height: 130px;
+  width: 500px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+.btn{
+  margin-top: 16px;
+  margin-left: 150px;
+  border: none;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px;
+  font-style: italic;
+  color: #fdf2e9;
+  background: #78552D;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.output{
+  opacity: 0.8;
+  background: #78552D;
+  font-style: italic;
+  height: 130px;
+  width: 500px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid #fff;
+
+}
+
+h2{
+  z-index: 9999;
+  font-size: 100px;
+  color: black;
+}
+.out{
+  margin-bottom: -16px;
+  margin-left: 12px;
+  margin-top: 20px;
+  font-style: italic;
+  font-size: 18px;
+  color: #fdf2e9;
+}
+span{
+  font-size: 35px;
+  transform: scale(.5, 1);
+}
+/* .footer{ */
+/*   position: absolute; */
+/*   top: 100%; */
+/*   left: 10%; */
+/* } */

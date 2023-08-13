@@ -6,4 +6,6 @@ Built using Vanilla JS,HTML and CSS
     - Translates English to Mando'a(language of Mandalorians)
     - Build using Fun Translations API
 
+## ScreenShot
+
 

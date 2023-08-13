@@ -1,4 +1,4 @@
-# Engish to Mandoa Translator
+# Engish to Mando'a Translator
 
 Built using Vanilla JS,HTML and CSS
 

@@ -1,26 +1,30 @@
 "use strict";
 
 const btn = document.querySelector(".btn");
-// const audio = document.querySelector(".audio");
-// audio.muted = true;
-// audio.play();
-/*
-const source = "./hum.ogg";
-const audio = document.createElement("audio");
-//
-audio.autoplay = true;
-//
-audio.load();
-audio.addEventListener("load", function () {
-  audio.play();
-}, true);
-audio.src = source;
-*/
+const txtarea = document.querySelector(".text--input");
+const output = document.querySelector(".output");
 
 document.addEventListener("click", function () {
   const backgroundMusic = document.getElementById("background-music");
   backgroundMusic.play();
 });
 
-btn.addEventListener("click", () => console.log("button clicked"));
+const content = function (data) {
+  console.log(data);
+  output.innerHTML = data;
+};
+btn.addEventListener("click", () => {
+  //Getting the message from textarea
+  const message = txtarea.value;
+  console.log("button clicked");
+  console.log(message);
+  fetch(
+    `https://api.funtranslations.com/translate/mandalorian.json?text=${
+      encodeURIComponent(message)
+    }`,
+  ).then((response) => response.json()).then((data) =>
+    content(data.contents.translated) // output.innnerHTML`${data}`
+  );
+});
 // audioElement.play();
+//

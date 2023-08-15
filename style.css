@@ -78,6 +78,9 @@ font-family: 'Poppins', sans-serif;
 }
 
 .output{
+  color: #fdf2e9;
+  padding-top: 10px;
+  padding: 10px;
   opacity: 0.8;
   background: #78552D;
   font-style: italic;
